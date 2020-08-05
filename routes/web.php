@@ -25,3 +25,20 @@ Route::get('/form', function () {
 Route::get('/welcome1', function () {
     return view('welcome1');
 });
+
+
+Route::get('/master', function () {
+    return view('adminlte.master');
+});
+
+Route::get('/items', function () {
+    return view('items.index1');
+});
+
+Route::get('/partials', function () {
+    return view('partials.tables');
+});
+
+Route::get('/partials', function () {
+    return view('partials.datatables');
+});
