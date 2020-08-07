@@ -42,3 +42,9 @@ Route::get('/partials', function () {
 Route::get('/partials', function () {
     return view('partials.datatables');
 });
+
+route::get('posts/create', 'postcontroller@create');
+
+route::post('/posts','postcontroller@store');
+
+route::put('/posts/{id}','postcontroller@update');
