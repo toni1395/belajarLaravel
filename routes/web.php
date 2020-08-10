@@ -48,3 +48,5 @@ route::get('posts/create', 'postcontroller@create');
 route::post('/posts','postcontroller@store');
 
 route::put('/posts/{id}','postcontroller@update');
+
+route ::resource ('posting' , 'postingcontroller');

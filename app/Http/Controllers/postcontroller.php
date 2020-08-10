@@ -17,6 +17,11 @@ class postcontroller extends Controller
             "body" => $request["body"]
             ]);
 
+            $post = new post;
+            $post->title =$request ["title"];
+            $post->body = $request ["body"];
+            $post->save();
+
             return redirect('/posts/create');
     }
     public function update($id, $request){
